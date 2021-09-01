@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>바연젠</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sunflower:wght@500&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/234cd2d31a.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="api.js" defer></script>
+    <script src="globalFunc.js" defer></script>
+    <script src="modal.js" defer></script>
+    <script src="lists.js" defer></script>
+    <script src="cutEvent.js" defer></script>
+    <script src="loadCutList.js" defer></script>
+    <script src="resetBtnClick.js" defer></script>
+  </head>
+  <body>
+    <div class="modal">
+      <form>
+        <h1>점검시간을 입력해주세요</h1>
+        <p>예시: 2021-08-26 19:45</p>
+        <p>예시대로 적지 않을시 제대로 작동하지 않습니다</p>
+        <input type="text" />
+        <button type="submit">입력</button>
+      </form>
+    </div>
+    <button class="reset-btn">
+      <i class="fas fa-sync-alt"></i>
+    </button>
+    <header class="header">
+      <div class="logo"><a href="index.html" class="logo__name">바연젠</a></div>
+      <div class="header__select">
+        <select class="lists" name="itemList">
+          <option value="아이템선택">아이템선택</option>
+          <option value="백화검">백화검</option>
+          <option value="도깨비방망이">도깨비방망이</option>
+          <option value="백호무기">백호무기</option>
+          <option value="달빛도파">달빛도파</option>
+          <option value="달빛날">달빛날</option>
+          <option value="달빛돌">달빛돌</option>
+          <option value="달빛기운">달빛기운</option>
+          <option value="오선오뢰창">오선오뢰창</option>
+          <option value="인풍죽선">인풍죽선</option>
+          <option value="흑룡의어금니">흑룡의어금니</option>
+          <option value="진룡의어금니">진룡의어금니</option>
+          <option value="묵룡의어금니">묵룡의어금니</option>
+          <option value="감룡의어금니">감룡의어금니</option>
+          <option value="용마의발톱">용마의발톱</option>
+          <option value="용천의발톱">용천의발톱</option>
+          <option value="용랑의발톱">용랑의발톱</option>
+          <option value="용겸의발톱">용겸의발톱</option>
+          <option value="용비의발톱">용비의발톱</option>
+          <option value="풍운제일검">풍운제일검</option>
+          <option value="풍운제이검">풍운제이검</option>
+          <option value="풍의제삼검">풍의제삼검</option>
+          <option value="운의제삼검">운의제삼검</option>
+        </select>
+        <select class="lists" name="bossList">
+          <option value="보스선택">보스선택</option>
+          <option value="인형술사">인형술사</option>
+          <option value="도깨비왕">도깨비왕</option>
+          <option value="일본밀정두목">일본밀정두목</option>
+          <option value="힘쎈독충">힘쎈독충</option>
+          <option value="힘쎈노인">힘쎈노인</option>
+          <option value="산적부두목">산적부두목</option>
+          <option value="겁살파수">겁살파수</option>
+          <option value="겁살파수꾼">겁살파수꾼</option>
+          <option value="주비">주비</option>
+          <option value="맹독화군">맹독화군</option>
+          <option value="철갑대사">철갑대사</option>
+          <option value="백호왕">백호왕</option>
+          <option value="백적호왕">백적호왕</option>
+          <option value="흑룡">흑룡</option>
+          <option value="진룡">진룡</option>
+          <option value="묵룡">묵룡</option>
+          <option value="감룡">감룡</option>
+          <option value="용왕용마">용왕용마</option>
+          <option value="용왕용천">용왕용천</option>
+          <option value="용왕용랑">용왕용랑</option>
+          <option value="용왕용겸">용왕용겸</option>
+          <option value="용왕용비">용왕용비</option>
+          <option value="행운다람쥐">행운다람쥐</option>
+          <option value="착한돼지">착한돼지</option>
+          <option value="주사">주사</option>
+          <option value="대사">대사</option>
+        </select>
+      </div>
+    </header>
+    <div class="container"></div>
+  </body>
+</html>

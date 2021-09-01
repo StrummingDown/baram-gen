@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Ubuntu", "sunflower";
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 0px;
+}
+
+.reset-btn {
+  all: unset;
+  position: absolute;
+  font-size: 28px;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  line-height: 30px;
+  font-size: 20px;
+  text-align: center;
+  left: 0;
+  top: 0;
+}
+
+.modal input {
+  all: unset;
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.header .logo {
+  margin-bottom: 20px;
+}
+
+.header a {
+  all: unset;
+  cursor: pointer;
+  font-size: 30px;
+  color: black;
+}
+
+.header__select {
+  display: flex;
+}
+
+.header__select .lists:last-child {
+  margin-left: 15px;
+}
+
+.container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  grid-auto-rows: 140px;
+  text-align: center;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #eae9e7;
+  border-radius: 5px;
+  align-items: center;
+  padding: 5px;
+}
+
+.card .title {
+  font-size: 17px;
+}
+
+.card button {
+  all: unset;
+  background-color: #cad2b8;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 20px;
+  color: black;
+  width: 70px;
+}
+
+.card button:active {
+  background-color: #bcbab8;
+}
+
+.card input {
+  all: unset;
+  border-bottom: 1px solid black;
+  width: 40%;
+}
