@@ -32,4 +32,4 @@ const listInput = (e) => {
   }
 };
 
-lists.addEventListener("input", listInput);
+lists.addEventListener("change", listInput);
