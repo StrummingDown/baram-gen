@@ -55,7 +55,11 @@ body {
 }
 
 .header .logo {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+.header p {
+  margin-bottom: 15px;
 }
 
 .header a {
