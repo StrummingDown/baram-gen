@@ -10,7 +10,7 @@ const printData = (data, value) => {
       <span class="check-time">${calEstimatedTime(map.gentime)}</span>
       <p>다음젠</p>
       <form>
-        <input type="text" placeholder="07:04"/>
+        <input type="text" placeholder="1 / 1:3 / 1:33"/>
         <button data-submit="submit">입력</button>
       </form>
       <span class="cut-time "></span>

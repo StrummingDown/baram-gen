@@ -142,7 +142,7 @@ body {
 .card input {
   all: unset;
   border-bottom: 1px solid black;
-  width: 40%;
+  width: 50%;
 }
 
 .ads {

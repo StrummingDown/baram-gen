@@ -21,7 +21,8 @@ const cardSubmit = (e) => {
     const cutSpan = parentNode.querySelector(".cut-time");
     const cardInput = parentNode.querySelector("input").value;
     const nextGentime = new Date(createTimeStamp(cardInput));
-    if (cardInput.length === 5 && nextGentime.getTime() > Date.now()) {
+    const nextGentimeDelay = nextGentime.getTime() + 86400000;
+    if (nextGentimeDelay > nextGentime.getTime()) {
       getDataByTitle(title).then((data) => {
         cutSpan.innerHTML = printTimeStamp(nextGentime);
         const obj = {

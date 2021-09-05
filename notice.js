@@ -27,7 +27,8 @@ const modalSelectChange = (e) => {
             3. 좀 더 가독성 좋은 폰트로 변경하였습니다.<br /><br/>
             4. 공지사항 게시판을 추가하였습니다.<br /><br />
             5. 예상젠 딜레이시간을<br/>1시간에서 50분으로 변경하였습니다.<br /><br />
-            6. 피드백을 받고있습니다.<br />(이메일: voluntad3000@gmail.com)
+            6. 다음젠시간 입력을 좀 더 편하게<br/>입력할수 있게 변경하였습니다.<br/><br/>
+            7. 피드백을 받고있습니다.<br />(이메일: voluntad3000@gmail.com)
           </p>`;
       break;
     default:
