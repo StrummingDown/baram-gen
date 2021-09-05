@@ -7,7 +7,7 @@
     <meta title="바연젠" />
     <meta
       name="keywords"
-      content="바람의나라 연, 바람의나라 모바일, 바람의나라 연 모바일, 바람의나라 연 젠타임 위키, 바람의나라 연 젠타임 사이트, 바람의나라 연 젠시간, 바람의나라 연 보스 젠타임, 바람의나라 연 도깨비왕 젠시간, 바람의나라 연 도깨비왕 젠, 바람의나라 연 감룡 젠타임, 바람의나라 연 보스 젠시간, 바람의나라 연 돼지왕 젠, 바람의나라 연 백호왕 젠시간"
+      content="바람의나라 연 젠타임 사이트, 바람의나라 연 보스 젠타임, 바람의나라 연, 바람의나라 모바일, 바람의나라 연 모바일, 바람의나라 연 젠타임 위키, 바람의나라 연 젠시간, 바람의나라 연 도깨비왕 젠시간, 바람의나라 연 도깨비왕 젠, 바람의나라 연 감룡 젠타임, 바람의나라 연 보스 젠시간, 바람의나라 연 돼지왕 젠, 바람의나라 연 백호왕 젠시간"
     />
     <meta
       name="description"
@@ -34,14 +34,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sunflower:wght@500&family=Ubuntu&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"
       rel="stylesheet"
     />
-    <script
-      type="text/javascript"
-      src="//t1.daumcdn.net/kas/static/ba.min.js"
-      async
-    ></script>
     <script
       src="https://kit.fontawesome.com/234cd2d31a.js"
       crossorigin="anonymous"
@@ -49,21 +44,31 @@
     ></script>
     <script src="api.js" defer></script>
     <script src="globalFunc.js" defer></script>
-    <script src="modal.js" defer></script>
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9822269733619453"
-      crossorigin="anonymous"
-    ></script>
     <script src="lists.js" defer></script>
     <script src="cutEvent.js" defer></script>
     <script src="loadCutList.js" defer></script>
     <script src="resetBtnClick.js" defer></script>
+    <script src="footer.js" defer></script>
+    <script src="notice.js" defer></script>
   </head>
   <body>
-    <div class="modal">
+    <div class="modal__notice hidden" data-type="close">
+      <div class="notice__container">
+        <header class="notice__header">
+          <i class="fas fa-times" data-type="close"></i>
+          <select class="notice__title" name="notice__lists">
+            <option class="notice__list" value="">메뉴선택</option>
+            <option class="notice__list" value="how">사용방법</option>
+            <option class="notice__list" value="update">업데이트</option>
+          </select>
+          <div class=""></div>
+        </header>
+        <div class="notice__main"></div>
+      </div>
+    </div>
+    <div class="modal hidden">
       <form>
-        <h1>점검시간을 입력해주세요</h1>
+        <h1>점검종료 시간을 입력해주세요</h1>
         <p>예시: 2021-08-26 19:45</p>
         <p>예시대로 적지 않을시,<br />제대로 작동하지 않습니다</p>
         <input type="text" />
@@ -74,8 +79,10 @@
       <i class="fas fa-sync-alt"></i>
     </button>
     <header class="header">
-      <div class="logo"><a href="index.html" class="logo__name">바연젠</a></div>
-      <p>연락처: voluntad3000@gmail.com</p>
+      <div class="logo"><a href="/" class="logo__name">바연젠</a></div>
+      <ul class="header__lists">
+        <li class="list--notice">공지사항</li>
+      </ul>
       <div class="header__select">
         <select class="lists" name="itemList">
           <option value="아이템선택">아이템선택</option>
@@ -134,14 +141,28 @@
       </div>
     </header>
     <div class="container"></div>
-    <footer class="ads">
+    <div class="ads">
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9822269733619453"
+        crossorigin="anonymous"
+      ></script>
+      <!-- 하단광고 -->
       <ins
-        class="kakao_ad_area"
-        style="display: none"
-        data-ad-unit="DAN-QWdup7Ge2IeAF1US"
-        data-ad-width="320"
-        data-ad-height="100"
+        class="adsbygoogle"
+        style="display: block"
+        data-ad-client="ca-pub-9822269733619453"
+        data-ad-slot="2396164367"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
       ></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    <footer class="footer">
+      <p class="contact">연락처: voluntad3000@gmail.com</p>
+      <p class="copyright"></p>
     </footer>
   </body>
 </html>

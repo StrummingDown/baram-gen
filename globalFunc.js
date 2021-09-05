@@ -9,7 +9,7 @@ const printTimeStamp = (time) => {
 const calEstimatedTime = (gentime) => {
   const checkTime = Number(localStorage.getItem("checkTime"));
   const passTime = Date.now() - checkTime;
-  const delayTime = 3600000;
+  const delayTime = 3000000;
   let count = Math.floor(passTime / gentime);
   const estimatedTime = new Date(checkTime + gentime * count);
   const remainTime = estimatedTime.getTime() - Date.now() + delayTime;
