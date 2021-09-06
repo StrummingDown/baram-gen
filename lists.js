@@ -10,7 +10,7 @@ const printData = (data, value) => {
       <span class="check-time">${calEstimatedTime(map.gentime)}</span>
       <p>다음젠</p>
       <form>
-        <input type="text" placeholder="1 / 1:3 / 1:33"/>
+        <input type="text" placeholder="잡은시간 입력"/>
         <button data-submit="submit">입력</button>
       </form>
       <span class="cut-time "></span>
@@ -32,6 +32,6 @@ const listInput = (e) => {
   }
 };
 
-localStorage.setItem("checkTime", new Date("2021-09-02 12:00").getTime());
+localStorage.setItem("checkTime", new Date("2021-09-02T12:00").getTime());
 
 lists.addEventListener("change", listInput);

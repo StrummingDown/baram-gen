@@ -20,10 +20,10 @@ const cardSubmit = (e) => {
     const title = parentNode.querySelector("h1").innerText;
     const cutSpan = parentNode.querySelector(".cut-time");
     const cardInput = parentNode.querySelector("input").value;
-    const nextGentime = new Date(createTimeStamp(cardInput));
-    const nextGentimeDelay = nextGentime.getTime() + 86400000;
-    if (nextGentimeDelay > nextGentime.getTime()) {
+    const cutTime = new Date(createTimeStamp(cardInput));
+    if (cutTime.getTime()) {
       getDataByTitle(title).then((data) => {
+        const nextGentime = new Date(cutTime.getTime() + data[0].gentime);
         cutSpan.innerHTML = printTimeStamp(nextGentime);
         const obj = {
           title,
