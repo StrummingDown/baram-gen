@@ -213,3 +213,7 @@ body {
 .hidden {
   display: none;
 }
+
+.ads {
+  width: 320px;
+}
