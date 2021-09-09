@@ -22,7 +22,7 @@ const modalSelectChange = (e) => {
       noticeMain.innerHTML = `<p class="notice__update">
             2021-09-09<br /><br />
             1. 홈페이지 리뉴얼중 입니다.<br /><br />
-            2. 점검시간을 업데이트 하였습니다.<br/><br/>
+            2. 임시점검시간을 반영하였습니다. 15:30<br/><br/>
             3. 이 사이트는 젠타임을 공유하지 않습니다.<br/>
             기록하셔도 다른사람은 전혀 모릅니다.<br/>
             젠타임 공유하는걸까봐<br/>
