@@ -32,6 +32,6 @@ const listInput = (e) => {
   }
 };
 
-localStorage.setItem("checkTime", new Date("2021-09-16T14:00").getTime());
+localStorage.setItem("checkTime", new Date("2021-09-17T11:00").getTime());
 
 lists.addEventListener("change", listInput);
