@@ -20,9 +20,9 @@ const modalSelectChange = (e) => {
       break;
     case "update":
       noticeMain.innerHTML = `<p class="notice__update">
-            2021-09-16<br /><br />
-            1. 홈페이지 리뉴얼중 입니다.<br /><br />
-            2. 점검시간을 반영하였습니다.<br/>14:00<br/><br/>
+            2021-09-17<br /><br />
+            1. 드디어 홈페이지 리뉴얼이 거의 끝나갑니다.<br /><br />
+            2. 임시점검시간을 반영하였습니다.<br/>11:00<br/><br/>
             3. 이 사이트는 젠타임을 공유하지 않습니다.<br/>
             기록하셔도 다른사람은 전혀 모릅니다.<br/><br/>
             피드백을 받고있습니다.<br />(이메일: voluntad3000@gmail.com)
