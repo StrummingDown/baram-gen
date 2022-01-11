@@ -13,6 +13,7 @@ const loadCutList = (cutList) => {
     component.push(create);
   });
   container.innerHTML = component.join("");
+  console.log(create);
 };
 
 function init() {
